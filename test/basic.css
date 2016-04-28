@@ -1,0 +1,5 @@
+.foo {
+	position: absolute;
+	top, left: 0;
+	margin, padding: 1em;
+}

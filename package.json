@@ -1,0 +1,39 @@
+{
+  "name": "postcss-commas",
+  "version": "1.0.0",
+  "description": "Declare multiple, comma-separated properties",
+  "keywords": [
+    "postcss",
+    "css",
+    "postcss-plugin",
+    "commas",
+    "multiples",
+    "separated",
+    "declarations",
+    "property",
+    "properties"
+  ],
+  "author": "Jonathan Neal <jonathantneal@hotmail.com>",
+  "license": "CC0-1.0",
+  "repository": "jonathantneal/postcss-commas",
+  "homepage": "https://github.com/jonathantneal/postcss-commas#readme",
+  "bugs": "https://github.com/jonathantneal/postcss-commas/issues",
+  "dependencies": {
+    "postcss": "^5.0.14"
+  },
+  "devDependencies": {
+    "eslint": "^1.10.3",
+    "jscs": "^2.8.0",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.4.0"
+  },
+  "scripts": {
+    "lint": "eslint . && jscs .",
+    "tape": "tape test.js | tap-spec",
+    "test": "npm run lint && npm run tape"
+  },
+  "engines": {
+    "iojs": ">=2.0.0",
+    "node": ">=0.12.0"
+  }
+}
