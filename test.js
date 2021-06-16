@@ -12,7 +12,8 @@ var dir   = './test/';
 var fs      = require('fs');
 var path    = require('path');
 var plugin  = require('./');
-var test    = require('tape');
+var test = require('tape');
+var postcss = require('postcss');
 
 Object.keys(tests).forEach(function (name) {
 	var parts = tests[name];
@@ -50,7 +51,9 @@ Object.keys(tests).forEach(function (name) {
 				fs.writeFileSync(expectPath, expectCSS);
 			}
 
-			plugin.process(inputCSS, options).then(function (result) {
+			postcss([
+				plugin
+			]).process(inputCSS, options).then(function (result) {
 				var actualCSS = result.css;
 
 				if (debug) {

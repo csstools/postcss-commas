@@ -18,14 +18,15 @@
   "repository": "jonathantneal/postcss-commas",
   "homepage": "https://github.com/jonathantneal/postcss-commas#readme",
   "bugs": "https://github.com/jonathantneal/postcss-commas/issues",
-  "dependencies": {
-    "postcss": "^5.0.14"
-  },
   "devDependencies": {
     "eslint": "^1.10.3",
     "jscs": "^2.8.0",
+    "postcss": "^8.3.4",
     "tap-spec": "^4.1.1",
     "tape": "^4.4.0"
+  },
+  "peerDependencies": {
+    "postcss": ">= 8.1"
   },
   "scripts": {
     "lint": "eslint . && jscs .",
@@ -33,7 +34,6 @@
     "test": "npm run lint && npm run tape"
   },
   "engines": {
-    "iojs": ">=2.0.0",
-    "node": ">=0.12.0"
+    "node": ">=12"
   }
 }
