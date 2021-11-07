@@ -15,25 +15,30 @@
   ],
   "author": "Jonathan Neal <jonathantneal@hotmail.com>",
   "license": "CC0-1.0",
-  "repository": "jonathantneal/postcss-commas",
-  "homepage": "https://github.com/jonathantneal/postcss-commas#readme",
-  "bugs": "https://github.com/jonathantneal/postcss-commas/issues",
+  "repository": "csstools/postcss-commas",
+  "homepage": "https://github.com/csstools/postcss-commas#readme",
+  "bugs": "https://github.com/csstools/postcss-commas/issues",
   "dependencies": {
     "postcss": "^5.0.14"
   },
   "devDependencies": {
-    "eslint": "^1.10.3",
-    "jscs": "^2.8.0",
-    "tap-spec": "^4.1.1",
-    "tape": "^4.4.0"
+    "eslint": "^7.32.0",
+    "postcss-tape": "6.0.1"
   },
   "scripts": {
-    "lint": "eslint . && jscs .",
-    "tape": "tape test.js | tap-spec",
-    "test": "npm run lint && npm run tape"
+    "lint": "eslint . --cache",
+    "pretest": "npm run lint",
+    "test": "postcss-tape",
+    "prepublishOnly": "npm test"
   },
   "engines": {
-    "iojs": ">=2.0.0",
-    "node": ">=0.12.0"
+    "node": "^10 || ^12 || >=14"
+  },
+  "eslintConfig": {
+    "env": {
+      "es6": true,
+      "node": true
+    },
+    "extends": "eslint:recommended"
   }
 }
