@@ -1,8 +1,9 @@
-# PostCSS Commas
+# PostCSS Commas [<img src="https://postcss.github.io/postcss/logo.svg" alt="PostCSS Logo" width="90" height="90" align="right">][postcss]
 
-<a href="https://github.com/postcss/postcss"><img src="https://postcss.github.io/postcss/logo.svg" alt="PostCSS Logo" width="80" height="80" align="right"></a>
-
-[![NPM Version][npm-img]][npm] [![Build Status][ci-img]][ci]
+[![NPM Version][npm-img]][npm-url]
+[![Build Status][cli-img]][cli-url]
+[![Licensing][lic-img]][lic-url]
+[![Gitter Chat][git-img]][git-url]
 
 [PostCSS Commas] allows you to declare multiple, comma-separated properties in CSS.
 
@@ -107,9 +108,13 @@ grunt.initConfig({
 });
 ```
 
-[ci]:      https://travis-ci.org/jonathantneal/postcss-commas
-[ci-img]:  https://img.shields.io/travis/jonathantneal/postcss-commas.svg
-[npm]:     https://www.npmjs.com/package/postcss-commas
+[cli-url]: https://github.com/csstools/postcss-commas/actions/workflows/ci.yaml/badge.svg
+[cli-img]: https://github.com/csstools/postcss-commas/actions/workflows/ci.yaml
+[git-url]: https://gitter.im/postcss/postcss
+[git-img]: https://img.shields.io/badge/chat-gitter-blue.svg
+[lic-url]: LICENSE.md
+[lic-img]: https://img.shields.io/npm/l/postcss-commas.svg
+[npm-url]: https://www.npmjs.com/package/postcss-commas
 [npm-img]: https://img.shields.io/npm/v/postcss-commas.svg
 
 [Gulp PostCSS]:  https://github.com/postcss/gulp-postcss
